@@ -29,9 +29,9 @@ while True:
 
         skip += 1
         
-        if skip%10 == 0:
+        if skip%10 == 0: # saving every 10th face's data to save memory
             face_data.append(face_section)
-            print(len(face_data))
+            print(len(face_data)) 
 
     cv2.imshow("Face_Recognition Activate", gray_frame)
 
